@@ -7,7 +7,7 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_jk5pp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538051, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.710248, 0)
 
 [node name="platform" parent="." instance=ExtResource("3_cajnw")]
 transform = Transform3D(30, 0, 0, 0, 2, 0, 0, 0, 2, 0.383198, -0.104492, -0.0298137)
