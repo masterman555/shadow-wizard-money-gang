@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bt8ctp221vro8"]
+[gd_scene load_steps=4 format=3 uid="uid://bt8ctp221vro8"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_5ctw6"]
+[ext_resource type="Texture2D" uid="uid://ca4b1x6dkj3h4" path="res://Assets/coin.png" id="2_mupin"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cm5ia"]
 
@@ -11,6 +12,9 @@ script = ExtResource("1_5ctw6")
 shape = SubResource("BoxShape3D_cm5ia")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.872862, 0.487966, 0, -0.487966, 0.872862, -0.020507, 0, 0)
+pixel_size = 0.05
+texture = ExtResource("2_mupin")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.794096, 0.607792, 0, -0.607792, 0.794096, 0, 3.08623, 3.89657)

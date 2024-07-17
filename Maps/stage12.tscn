@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=4 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://dygisof82vfmt" path="res://Assets/platform.blend" id="3_cajnw"]
+[ext_resource type="PackedScene" uid="uid://cbjtfmf05adit" path="res://Assets/storetype1.tscn" id="3_ra2ya"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -9,7 +10,25 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538051, 0)
 
 [node name="platform" parent="." instance=ExtResource("3_cajnw")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.383198, -0.104492, -0.0298137)
+transform = Transform3D(30, 0, 0, 0, 2, 0, 0, 0, 2, 0.383198, -0.104492, -0.0298137)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.805835, 0.59214, 0, -0.59214, 0.805835, 0, 1.9389, 6.95092)
+
+[node name="StaticBody3D" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.250461, 0, -21.4439)
+
+[node name="StaticBody3D4" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -18.7495, 0, -21.4439)
+
+[node name="StaticBody3D5" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -37.7495, 0, -21.4439)
+
+[node name="StaticBody3D6" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -56.7495, 0, -21.4439)
+
+[node name="StaticBody3D2" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 19.8107, 0, -21.399)
+
+[node name="StaticBody3D3" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.683, 0, -21.473)

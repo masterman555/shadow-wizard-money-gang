@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbjtfmf05adit"]
+
+[ext_resource type="PackedScene" uid="uid://csqqgtxi1an87" path="res://Assets/store.blend" id="1_pvhun"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6v11v"]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="store" parent="." instance=ExtResource("1_pvhun")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.148097, 0, -0.0809059)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(39.33, 0, 0, 0, 39.33, 0, 0, 0, 39.33, 0, 19.3926, 11.132)
+shape = SubResource("BoxShape3D_6v11v")
