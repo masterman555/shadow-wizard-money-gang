@@ -1,16 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=5 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
-[ext_resource type="PackedScene" uid="uid://dygisof82vfmt" path="res://Assets/platform.blend" id="3_cajnw"]
+[ext_resource type="PackedScene" uid="uid://cbw2mbkvd64wy" path="res://Assets/BlenderFile/planefloor.blend" id="3_67xff"]
 [ext_resource type="PackedScene" uid="uid://cbjtfmf05adit" path="res://Assets/storetype1.tscn" id="3_ra2ya"]
+[ext_resource type="PackedScene" uid="uid://g5y75gr1pkxf" path="res://Assets/simple_wall.tscn" id="4_73s54"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_jk5pp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.710248, 0)
-
-[node name="platform" parent="." instance=ExtResource("3_cajnw")]
-transform = Transform3D(30, 0, 0, 0, 2, 0, 0, 0, 2, 0.383198, -0.104492, -0.0298137)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.805835, 0.59214, 0, -0.59214, 0.805835, 0, 1.9389, 6.95092)
@@ -31,4 +29,55 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -56.7495, 0, -21.4439)
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 19.8107, 0, -21.399)
 
 [node name="StaticBody3D3" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.683, 0, -21.473)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.0641, 0, -21.399)
+
+[node name="StaticBody3D7" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 58.1214, 0, -21.399)
+
+[node name="StaticBody3D8" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 77.432, 0, -21.399)
+
+[node name="StaticBody3D9" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 96.7805, 0, -21.399)
+
+[node name="StaticBody3D10" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 116.27, 0, -21.399)
+
+[node name="StaticBody3D11" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 0.250461, 0, 27.5031)
+
+[node name="StaticBody3D12" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -18.7495, 0, 27.5031)
+
+[node name="StaticBody3D13" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -37.7495, 0, 27.5031)
+
+[node name="StaticBody3D14" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -56.7495, 0, 27.5031)
+
+[node name="StaticBody3D15" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 19.8107, 0, 27.548)
+
+[node name="StaticBody3D16" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 39.0641, 0, 27.548)
+
+[node name="StaticBody3D17" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 58.1214, 0, 27.548)
+
+[node name="StaticBody3D18" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 77.432, 0, 27.548)
+
+[node name="StaticBody3D19" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 96.7805, 0, 27.548)
+
+[node name="StaticBody3D20" parent="." instance=ExtResource("3_ra2ya")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 116.27, 0, 27.548)
+
+[node name="planefloor" parent="." instance=ExtResource("3_67xff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6298, 0.208939, 2.86617)
+
+[node name="planefloor2" parent="." instance=ExtResource("3_67xff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.8772, 0.208939, 2.86617)
+
+[node name="StaticBody3D21" parent="." instance=ExtResource("4_73s54")]
+transform = Transform3D(-8.74228e-08, 0, 1, 0, 2, 0, -2, 0, -4.37114e-08, -66.582, 11.0268, 1.74866)

@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cbjtfmf05adit"]
 
-[ext_resource type="PackedScene" uid="uid://csqqgtxi1an87" path="res://Assets/store.blend" id="1_pvhun"]
+[ext_resource type="PackedScene" uid="uid://csqqgtxi1an87" path="res://Assets/BlenderFile/store.blend" id="1_pvhun"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6v11v"]
 
