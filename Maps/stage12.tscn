@@ -1,13 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=9 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://cbw2mbkvd64wy" path="res://Assets/BlenderFile/planefloor.blend" id="3_67xff"]
 [ext_resource type="PackedScene" uid="uid://cbjtfmf05adit" path="res://Assets/storetype1.tscn" id="3_ra2ya"]
 [ext_resource type="PackedScene" uid="uid://g5y75gr1pkxf" path="res://Assets/simple_wall.tscn" id="4_73s54"]
+[ext_resource type="PackedScene" uid="uid://bndqy85t1acsb" path="res://pickup.tscn" id="5_23nte"]
+[ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="6_fh21u"]
+[ext_resource type="Script" path="res://UI/UIRoot.gd" id="7_8gart"]
+[ext_resource type="PackedScene" uid="uid://dee6nu6d7rwpx" path="res://UI/inventory_dialogue.tscn" id="8_uahfx"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_jk5pp")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.710248, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -81,3 +86,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.8772, 0.208939, 2.86617)
 
 [node name="StaticBody3D21" parent="." instance=ExtResource("4_73s54")]
 transform = Transform3D(-8.74228e-08, 0, 1, 0, 2, 0, -2, 0, -4.37114e-08, -66.582, 11.0268, 1.74866)
+
+[node name="Node3D" parent="." instance=ExtResource("5_23nte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
+
+[node name="Node3D2" parent="." instance=ExtResource("5_23nte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)
+item = ExtResource("6_fh21u")
+
+[node name="UIRoot" type="CanvasLayer" parent="."]
+script = ExtResource("7_8gart")
+
+[node name="InventoryDialogue" parent="UIRoot" instance=ExtResource("8_uahfx")]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.5
+offset_top = -17.5
+offset_right = 48.5
+offset_bottom = 17.5

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://ca317ddclls6d"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_aji5c"]
+[ext_resource type="PackedScene" uid="uid://b1f1wthsem3lp" path="res://Assets/arch.blend" id="1_fl1l3"]
+[ext_resource type="Texture2D" uid="uid://ca4b1x6dkj3h4" path="res://Assets/coin.png" id="1_sfqka"]
+
+[resource]
+script = ExtResource("1_aji5c")
+name = "Arch"
+scene = ExtResource("1_fl1l3")
+icon = ExtResource("1_sfqka")
