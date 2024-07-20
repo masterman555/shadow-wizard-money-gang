@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://df57yr314lj3v"]
+
+[ext_resource type="PackedScene" uid="uid://cbw2mbkvd64wy" path="res://Assets/BlenderFile/planefloor.blend" id="1_alwen"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_828cu"]
+size = Vector3(112.07, 1, 20.5245)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.817322, 0, -0.181732)
+shape = SubResource("BoxShape3D_828cu")
+
+[node name="planefloor" parent="." instance=ExtResource("1_alwen")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.771439, 0, -0.191438)

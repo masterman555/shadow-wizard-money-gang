@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c3qwnmmr6thjr"
-path="res://.godot/imported/playercube.blend-40c9e72de6902633988ce9cd6c7696c9.scn"
+uid="uid://214fy7krqh65"
+path="res://.godot/imported/big pepper plate.blend-5d23926a8c28cf8e12c871494e8c6727.scn"
 
 [deps]
 
-source_file="res://Assets/playercube.blend"
-dest_files=["res://.godot/imported/playercube.blend-40c9e72de6902633988ce9cd6c7696c9.scn"]
+source_file="res://Assets/BlenderFile/shop assets/spice shop/pepper/big pepper plate.blend"
+dest_files=["res://.godot/imported/big pepper plate.blend-5d23926a8c28cf8e12c871494e8c6727.scn"]
 
 [params]
 
