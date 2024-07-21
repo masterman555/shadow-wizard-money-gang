@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://dc38q6i5ccf0c"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_cuye8"]
+[ext_resource type="Texture2D" uid="uid://qi68t8qaijk1" path="res://icon.svg" id="1_n4iil"]
+[ext_resource type="PackedScene" uid="uid://cgly33kbaxh7l" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/slim pepper pot.blend" id="2_kxdlu"]
+
+[resource]
+script = ExtResource("1_cuye8")
+name = "Pepper"
+scene = ExtResource("2_kxdlu")
+icon = ExtResource("1_n4iil")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=4 format=3 uid="uid://p5nf8uvr3h75"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/recipe.gd" id="1_5d2yu"]
+[ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="1_ema0o"]
+[ext_resource type="Resource" uid="uid://ditmqsvqmlyq7" path="res://DataModels/Items/wall.tres" id="2_bajqa"]
+
+[resource]
+script = ExtResource("1_5d2yu")
+name = "TestRecipe"
+ingredients = Array[Resource("res://DataModels/Resources/item.gd")]([ExtResource("1_ema0o"), ExtResource("1_ema0o")])
+results = Array[Resource("res://DataModels/Resources/item.gd")]([ExtResource("2_bajqa")])

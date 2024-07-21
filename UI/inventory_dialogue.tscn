@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dee6nu6d7rwpx"]
+[gd_scene load_steps=4 format=3 uid="uid://dee6nu6d7rwpx"]
 
 [ext_resource type="Script" path="res://UI/inventory_dialogue.gd" id="1_h55kw"]
 [ext_resource type="PackedScene" uid="uid://cpb82tk5rmmh" path="res://UI/item_slot.tscn" id="1_n1s87"]
+[ext_resource type="PackedScene" uid="uid://2ew27dkdmhho" path="res://UI/crafting_dialogue/item_grid/item_grid.tscn" id="3_uiiy4"]
 
 [node name="InventoryDialogue" type="PanelContainer"]
 anchors_preset = 15
@@ -28,9 +29,8 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "X"
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+[node name="GridContainer" parent="VBoxContainer" instance=ExtResource("3_uiiy4")]
 unique_name_in_owner = true
 layout_mode = 2
-columns = 5
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

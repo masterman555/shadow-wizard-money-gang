@@ -10,3 +10,11 @@ func remove_item(item:Item):
 
 func get_items() -> Array[Item]:
 	return _content
+
+func has_all(item:Array[Item]) -> bool:
+	var needed:Array[Item] = item.duplicate()
+	
+	for available in _content:
+		needed.erase(available)
+		
+	return false

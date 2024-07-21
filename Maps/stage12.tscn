@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=11 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://cbw2mbkvd64wy" path="res://Assets/BlenderFile/planefloor.blend" id="3_67xff"]
@@ -8,6 +8,8 @@
 [ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="6_fh21u"]
 [ext_resource type="Script" path="res://UI/UIRoot.gd" id="7_8gart"]
 [ext_resource type="PackedScene" uid="uid://dee6nu6d7rwpx" path="res://UI/inventory_dialogue.tscn" id="8_uahfx"]
+[ext_resource type="Resource" uid="uid://be05vlseodjyd" path="res://DataModels/all_recipes.tres" id="8_w0c0s"]
+[ext_resource type="PackedScene" uid="uid://dj4ifociina5c" path="res://UI/crafting_dialogue/crafting_dialogue.tscn" id="9_qo13o"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -96,6 +98,7 @@ item = ExtResource("6_fh21u")
 
 [node name="UIRoot" type="CanvasLayer" parent="."]
 script = ExtResource("7_8gart")
+all_recipes = ExtResource("8_w0c0s")
 
 [node name="InventoryDialogue" parent="UIRoot" instance=ExtResource("8_uahfx")]
 unique_name_in_owner = true
@@ -109,3 +112,16 @@ offset_left = -48.5
 offset_top = -17.5
 offset_right = 48.5
 offset_bottom = 17.5
+
+[node name="CraftingDialogue" parent="UIRoot" instance=ExtResource("9_qo13o")]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -578.0
+offset_top = -325.0
+offset_right = 576.0
+offset_bottom = 325.0
