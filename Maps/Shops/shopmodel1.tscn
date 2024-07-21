@@ -1,0 +1,120 @@
+[gd_scene load_steps=16 format=3 uid="uid://d143f266q7ptu"]
+
+[ext_resource type="Script" path="res://Maps/Shops/shopmodel1.gd" id="1_xqylg"]
+[ext_resource type="PackedScene" uid="uid://214fy7krqh65" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/big pepper plate.blend" id="2_1dg20"]
+[ext_resource type="PackedScene" uid="uid://0o0iw6ss61yt" path="res://Assets/BlenderFile/simple_wall.blend" id="3_stoo7"]
+[ext_resource type="PackedScene" uid="uid://p0cv228t6idp" path="res://Assets/BlenderFile/table.blend" id="4_st6ym"]
+[ext_resource type="PackedScene" uid="uid://brg211fsp121a" path="res://Assets/BlenderFile/shop assets/spice shop/pheonix ash/pheonix ash puch.blend" id="5_afxqn"]
+[ext_resource type="PackedScene" uid="uid://cgly33kbaxh7l" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/slim pepper pot.blend" id="6_o6nqw"]
+[ext_resource type="PackedScene" uid="uid://qqvljtb8s6mo" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/fat pepper pot.blend" id="7_tqt5r"]
+[ext_resource type="PackedScene" uid="uid://bjqtkpoxj40gf" path="res://Assets/BlenderFile/shop assets/characters/npc/npc.blend" id="9_txos7"]
+[ext_resource type="PackedScene" uid="uid://cxu5c8uid270g" path="res://Assets/BlenderFile/shop assets/spice shop/saffron/plate of saffron.blend" id="10_15n8t"]
+[ext_resource type="PackedScene" uid="uid://cbxswx2bfwhvx" path="res://Assets/BlenderFile/shop assets/spice shop/saffron/slim pot of saffron.blend" id="11_dsvq0"]
+[ext_resource type="PackedScene" uid="uid://uukosgm60d5u" path="res://Assets/BlenderFile/shop assets/spice shop/saffron/pot of saffron.blend" id="11_kqip6"]
+[ext_resource type="PackedScene" uid="uid://u1yda76exqa0" path="res://Assets/BlenderFile/shop assets/spice shop/sumac/big plate sumac.blend" id="12_bvaww"]
+[ext_resource type="PackedScene" uid="uid://c15f671gteppt" path="res://Assets/BlenderFile/shop assets/spice shop/sumac/big pot sumac.blend" id="13_lh66u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wjdpl"]
+size = Vector3(2.09216, 4.00378, 2.08643)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0wg67"]
+size = Vector3(2.53418, 6.9243, 3.98682)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_xqylg")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="InteractArea" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.19917, -1.19315, -1.47825)
+shape = SubResource("BoxShape3D_wjdpl")
+
+[node name="Label3D" type="Label3D" parent="Area3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.31474, -1.46917, -3.01019)
+visible = false
+billboard = 1
+text = "F"
+font_size = 128
+
+[node name="big pepper plate" parent="." instance=ExtResource("2_1dg20")]
+transform = Transform3D(0.948848, 0.295824, 0.110339, 1.38011e-08, -0.349472, 0.936947, 0.315732, -0.889021, -0.331596, -2.54774, 1.03241, -1.84072)
+
+[node name="big pepper plate3" parent="." instance=ExtResource("2_1dg20")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.33143, -0.993006, -1.59223)
+
+[node name="simple_wall" parent="." instance=ExtResource("3_stoo7")]
+transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, -2, 0, 1, -8.74228e-08, -0.00388744, -0.207124, 0.0450127)
+
+[node name="simple_wall2" parent="." instance=ExtResource("3_stoo7")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -1.47122, 3.00349, -1.96636)
+
+[node name="simple_wall4" parent="." instance=ExtResource("3_stoo7")]
+transform = Transform3D(-4.37114e-08, -0.5, 0, 1, -2.18557e-08, 0, 0, 0, 1, -4.72205, -0.223221, -1.96636)
+
+[node name="simple_wall3" parent="." instance=ExtResource("3_stoo7")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -1.47122, -3.44131, -1.96636)
+
+[node name="table" parent="." instance=ExtResource("4_st6ym")]
+transform = Transform3D(0.25, 0, 0, 0, -2.18557e-08, 0.75, 0, -0.5, -3.27835e-08, 1, -1.5, 0)
+
+[node name="pheonix ash puch" parent="." instance=ExtResource("5_afxqn")]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 1.22608, -3.10252, -1.61837)
+
+[node name="slim pepper pot" parent="." instance=ExtResource("6_o6nqw")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.66625, 1.31745, -0.356426)
+
+[node name="slim pepper pot4" parent="." instance=ExtResource("6_o6nqw")]
+transform = Transform3D(1, 0, 0, 0, 0.999413, -0.0342715, 0, 0.0342715, 0.999413, -2.99928, -2.6019, -0.513382)
+
+[node name="slim pepper pot3" parent="." instance=ExtResource("6_o6nqw")]
+transform = Transform3D(0.919906, 0.319886, -0.226818, 0.362046, -0.915035, 0.177859, -0.150652, -0.245732, -0.957559, 1.05213, -0.180702, -1.63121)
+
+[node name="slim pepper pot2" parent="." instance=ExtResource("6_o6nqw")]
+transform = Transform3D(0.986106, -0.166115, 0, -0.0275484, -0.163535, 0.986153, -0.163815, -0.972452, -0.165839, -1.69627, 1.75841, -0.356426)
+
+[node name="fat pepper pot" parent="." instance=ExtResource("7_tqt5r")]
+transform = Transform3D(2.5, 0, 0, 0, -1.09278e-07, 2.5, 0, -2.5, -1.09278e-07, -2.96384, 1.14108, -0.371101)
+
+[node name="fat pepper pot2" parent="." instance=ExtResource("7_tqt5r")]
+transform = Transform3D(1.5, 0, 0, 0, -6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, -3.75412, -0.528087, -0.371101)
+
+[node name="fat pepper pot3" parent="." instance=ExtResource("7_tqt5r")]
+transform = Transform3D(1.5, -1.73472e-18, -0.000366519, 0.000366519, -6.55671e-08, 1.5, -1.60211e-11, -1.5, -6.55671e-08, 1.57047, 0.680416, -0.307159)
+
+[node name="big pepper plate2" parent="." instance=ExtResource("2_1dg20")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04386, 1.03134, -4.50812e-08)
+
+[node name="npc" parent="." instance=ExtResource("9_txos7")]
+transform = Transform3D(2, 0, 0, 0, -7.64949e-08, 2, 0, -1.75, -8.74228e-08, 0.445845, -1.75527, -0.460845)
+
+[node name="plate of saffron" parent="." instance=ExtResource("10_15n8t")]
+transform = Transform3D(1.99121, -0.186476, -0.0171942, 0.0821168, 0.704424, 1.87004, -0.168303, -1.86253, 0.708986, 1.45501, -2.86154, -1.73159)
+
+[node name="plate of saffron2" parent="." instance=ExtResource("10_15n8t")]
+transform = Transform3D(5, 0, 0, 0, 0.0315199, 4.99972, 0, -2.99983, 0.0525332, 1.62624, -2.86154, -1.61989)
+
+[node name="pot of saffron" parent="." instance=ExtResource("11_kqip6")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.54115, -0.153281, -0.349146)
+
+[node name="pot of saffron2" parent="." instance=ExtResource("11_kqip6")]
+transform = Transform3D(2, 0, 0, 0, -4.37114e-08, 2, 0, -1, -8.74228e-08, -3.77548, -1.66176, -0.349146)
+
+[node name="slim pot of saffron" parent="." instance=ExtResource("11_dsvq0")]
+transform = Transform3D(1, 0, 0, 0, -0.309664, 0.950846, 0, -0.950846, -0.309664, -2.13551, 2.38392, -0.380682)
+
+[node name="big plate sumac" parent="." instance=ExtResource("12_bvaww")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.55705, -0.625744, -1.6396)
+
+[node name="big pot sumac" parent="." instance=ExtResource("13_lh66u")]
+transform = Transform3D(1.75, 0, 0, 0, -7.64949e-08, 1.75, 0, -1.75, -7.64949e-08, -3.82752, -2.69912, -0.444723)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="InvisibleWall" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76709, -0.230812, -1.49341)
+shape = SubResource("BoxShape3D_0wg67")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

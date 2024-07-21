@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-@export var player_speed : float = 50.0
+@export var player_speed : float = 15.0
 @export var NEGATIVE_SPEED : float = 8.0
 
 var inventory:Inventory = Inventory.new()
@@ -20,6 +20,11 @@ func _physics_process(delta):
 		direction.z += 1
 	if Input.is_action_pressed("move_up"):
 		direction.z -= 1
+		
+	
+	if direction != Vector3.ZERO:
+		direction = direction.normalized()
+		$Pivot.basis = Basis.looking_at(direction)
 	
 	direction = direction.normalized()
 	if direction:

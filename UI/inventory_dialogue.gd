@@ -10,7 +10,7 @@ func open(inventory:Inventory):
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	
 	grid_container.display(inventory.get_items())
-
+	
 func _on_close_button_pressed():
 	hide()
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
