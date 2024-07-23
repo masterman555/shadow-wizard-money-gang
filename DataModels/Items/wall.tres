@@ -1,9 +1,10 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ditmqsvqmlyq7"]
 
 [ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_586cb"]
-[ext_resource type="PackedScene" uid="uid://0o0iw6ss61yt" path="res://Assets/BlenderFile/simple_wall.blend" id="1_vdfc7"]
+[ext_resource type="PackedScene" uid="uid://85kcyp4y4pjo" path="res://Assets/BlenderFile/simple_wall.glb" id="1_betf7"]
 
 [resource]
 script = ExtResource("1_586cb")
 name = "Wall"
-scene = ExtResource("1_vdfc7")
+scene = ExtResource("1_betf7")
+price = 5

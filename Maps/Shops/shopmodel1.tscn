@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" path="res://Maps/Shops/shopmodel1.gd" id="1_xqylg"]
 [ext_resource type="PackedScene" uid="uid://214fy7krqh65" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/big pepper plate.blend" id="2_1dg20"]
-[ext_resource type="PackedScene" uid="uid://0o0iw6ss61yt" path="res://Assets/BlenderFile/simple_wall.blend" id="3_stoo7"]
-[ext_resource type="PackedScene" uid="uid://p0cv228t6idp" path="res://Assets/BlenderFile/table.blend" id="4_st6ym"]
 [ext_resource type="PackedScene" uid="uid://brg211fsp121a" path="res://Assets/BlenderFile/shop assets/spice shop/pheonix ash/pheonix ash puch.blend" id="5_afxqn"]
 [ext_resource type="PackedScene" uid="uid://cgly33kbaxh7l" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/slim pepper pot.blend" id="6_o6nqw"]
 [ext_resource type="PackedScene" uid="uid://qqvljtb8s6mo" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/fat pepper pot.blend" id="7_tqt5r"]
@@ -12,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://cbxswx2bfwhvx" path="res://Assets/BlenderFile/shop assets/spice shop/saffron/slim pot of saffron.blend" id="11_dsvq0"]
 [ext_resource type="PackedScene" uid="uid://uukosgm60d5u" path="res://Assets/BlenderFile/shop assets/spice shop/saffron/pot of saffron.blend" id="11_kqip6"]
 [ext_resource type="PackedScene" uid="uid://u1yda76exqa0" path="res://Assets/BlenderFile/shop assets/spice shop/sumac/big plate sumac.blend" id="12_bvaww"]
+[ext_resource type="PackedScene" uid="uid://q8ruuqc86mro" path="res://Assets/BlenderFile/table.glb" id="13_clvhv"]
+[ext_resource type="PackedScene" uid="uid://85kcyp4y4pjo" path="res://Assets/BlenderFile/simple_wall.glb" id="13_l6dyx"]
 [ext_resource type="PackedScene" uid="uid://c15f671gteppt" path="res://Assets/BlenderFile/shop assets/spice shop/sumac/big pot sumac.blend" id="13_lh66u"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wjdpl"]
@@ -43,21 +43,6 @@ transform = Transform3D(0.948848, 0.295824, 0.110339, 1.38011e-08, -0.349472, 0.
 
 [node name="big pepper plate3" parent="." instance=ExtResource("2_1dg20")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.33143, -0.993006, -1.59223)
-
-[node name="simple_wall" parent="." instance=ExtResource("3_stoo7")]
-transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, -2, 0, 1, -8.74228e-08, -0.00388744, -0.207124, 0.0450127)
-
-[node name="simple_wall2" parent="." instance=ExtResource("3_stoo7")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -1.47122, 3.00349, -1.96636)
-
-[node name="simple_wall4" parent="." instance=ExtResource("3_stoo7")]
-transform = Transform3D(-4.37114e-08, -0.5, 0, 1, -2.18557e-08, 0, 0, 0, 1, -4.72205, -0.223221, -1.96636)
-
-[node name="simple_wall3" parent="." instance=ExtResource("3_stoo7")]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, -1.47122, -3.44131, -1.96636)
-
-[node name="table" parent="." instance=ExtResource("4_st6ym")]
-transform = Transform3D(0.25, 0, 0, 0, -2.18557e-08, 0.75, 0, -0.5, -3.27835e-08, 1, -1.5, 0)
 
 [node name="pheonix ash puch" parent="." instance=ExtResource("5_afxqn")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 1.22608, -3.10252, -1.61837)
@@ -115,6 +100,12 @@ transform = Transform3D(1.75, 0, 0, 0, -7.64949e-08, 1.75, 0, -1.75, -7.64949e-0
 [node name="InvisibleWall" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76709, -0.230812, -1.49341)
 shape = SubResource("BoxShape3D_0wg67")
+
+[node name="simple_wall5" parent="." instance=ExtResource("13_l6dyx")]
+transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, 2, 0, -1, -8.74228e-08, 0, -0.207, 0.045)
+
+[node name="table" parent="." instance=ExtResource("13_clvhv")]
+transform = Transform3D(0.24999, -0.00436327, -2.86087e-10, 0, -2.18557e-08, 0.75, -0.00218163, -0.499981, -3.27823e-08, 1, -1.5, 0)
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
