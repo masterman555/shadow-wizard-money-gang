@@ -4,11 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://dvw7edc3yymlf" path="res://Assets/BlenderFile/characters/main/alchemist2.blend" id="3_qqfw5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cm5ia"]
+size = Vector3(1, 2.01868, 1.10156)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_5ctw6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00934, 0.0507813)
 shape = SubResource("BoxShape3D_cm5ia")
 
 [node name="Pivot" type="Marker3D" parent="."]

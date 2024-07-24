@@ -14,7 +14,7 @@
 
 [node name="Player" parent="." instance=ExtResource("2_jk5pp")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94976, 0.710248, 1.06107)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94976, 0.710248, 2.49822)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.805835, 0.59214, 0, -0.59214, 0.805835, 0, 1.9389, 6.95092)
