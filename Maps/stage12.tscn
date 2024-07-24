@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=10 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://bsbuw0lt7ov81" path="res://Assets/BlenderFile/planefloor.glb" id="3_67xff"]
-[ext_resource type="PackedScene" uid="uid://cbjtfmf05adit" path="res://Assets/storetype1.tscn" id="3_ra2ya"]
 [ext_resource type="PackedScene" uid="uid://bndqy85t1acsb" path="res://pickup.tscn" id="5_23nte"]
 [ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="6_fh21u"]
 [ext_resource type="Script" path="res://UI/UIRoot.gd" id="7_8gart"]
@@ -20,54 +19,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94976, 0.710248, 1.06107)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.805835, 0.59214, 0, -0.59214, 0.805835, 0, 1.9389, 6.95092)
 
-[node name="StaticBody3D" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 20.4662, 0.382502, -2.66682)
-
-[node name="StaticBody3D4" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 16.5573, 0.382502, -2.66682)
-
-[node name="StaticBody3D6" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 5.60165, 0.382502, -2.66682)
-
-[node name="StaticBody3D2" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 24.9904, 0.382502, -2.65643)
-
-[node name="StaticBody3D3" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 29.4437, 0.382502, -2.65643)
-
-[node name="StaticBody3D7" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 33.8516, 0.382502, -2.65643)
-
-[node name="StaticBody3D8" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 38.3182, 0.382502, -2.65643)
-
-[node name="StaticBody3D9" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 42.7934, 0.382502, -2.65643)
-
-[node name="StaticBody3D10" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(0.115649, 0, 0, 0, 0.115649, 0, 0, 0, 0.115649, 47.3013, 0.382502, -2.65643)
-
-[node name="StaticBody3D11" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 20.4662, 0.382502, 8.65456)
-
-[node name="StaticBody3D15" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 24.9904, 0.382502, 8.66495)
-
-[node name="StaticBody3D16" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 29.4437, 0.382502, 8.66495)
-
-[node name="StaticBody3D17" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 33.8516, 0.382502, 8.66495)
-
-[node name="StaticBody3D18" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 38.3182, 0.382502, 8.66495)
-
-[node name="StaticBody3D19" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 42.7934, 0.382502, 8.66495)
-
-[node name="StaticBody3D20" parent="." instance=ExtResource("3_ra2ya")]
-transform = Transform3D(-0.115649, 0, -1.01104e-08, 0, 0.115649, 0, 1.01104e-08, 0, -0.115649, 47.3013, 0.382502, 8.66495)
-
 [node name="planefloor" parent="." instance=ExtResource("3_67xff")]
 transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.231299, 17.7183, 0.430829, 2.95607)
 
@@ -81,7 +32,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)
 item = ExtResource("6_fh21u")
 
-[node name="Node3D3" parent="." instance=ExtResource("11_mjnue")]
+[node name="Shop1" parent="." instance=ExtResource("11_mjnue")]
 transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 10.6803, 0, -3.67295)
 
 [node name="UIRoot" type="CanvasLayer" parent="."]
