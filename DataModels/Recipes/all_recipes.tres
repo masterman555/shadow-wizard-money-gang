@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://be05vlseodjyd"]
 
-[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_m2nqt"]
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_sv7i4"]
 
 [resource]
-script = ExtResource("1_m2nqt")
+script = ExtResource("1_sv7i4")
 base_folder = "res://DataModels/Recipes"
 includes = Array[String](["*.tres"])
 excludes = Array[String]([])

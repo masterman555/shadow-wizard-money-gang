@@ -1,10 +1,11 @@
-[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ca317ddclls6d"]
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://ca317ddclls6d"]
 
 [ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_aji5c"]
-[ext_resource type="PackedScene" uid="uid://dv6oup1e1f6l8" path="res://Assets/BlenderFile/arch.glb" id="1_grwmw"]
 
 [resource]
 script = ExtResource("1_aji5c")
+item_id = 1
 name = "Arch"
-scene = ExtResource("1_grwmw")
+description = "This is arch"
 price = 5
+amount = 1

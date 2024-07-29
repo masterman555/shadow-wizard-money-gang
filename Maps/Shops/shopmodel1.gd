@@ -7,13 +7,11 @@ func _on_area_3d_body_entered(body):
 		%Label3D.show()
 		InRange = true
 
-func _on_area_3d_body_exited(body):
+func _on_area_3d_body_exited(_body):
 	%Label3D.hide()
 	%Shop.hide()
-	get_node("Area3D/Shop/Anim").play("TransitionOut")
 	InRange = false
 
-func _process(delta):
+func _process(_delta):
 	if InRange == true and Input.is_action_just_pressed("shop"):  
 			%Shop.show()
-			get_node("Area3D/Shop/Anim").play("TransitionIn")

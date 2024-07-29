@@ -2,8 +2,14 @@ class_name Inventory
 
 var _content:Array[Item] = []
 
+
+
 func add_item(item:Item):
+#	if 
+#		item.amount += 1
+#	else:
 	_content.append(item)
+	
 	
 func remove_item(item:Item):
 	_content.erase(item)
@@ -16,5 +22,4 @@ func has_all(item:Array[Item]) -> bool:
 	
 	for available in _content:
 		needed.erase(available)
-		
 	return false

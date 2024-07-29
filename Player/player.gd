@@ -10,7 +10,7 @@ func on_item_picked_up(item:Item):
 	inventory.add_item(item)
 	print("I got a ", item.name)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Vector3() # The player's movement vector.
 	if Input.is_action_pressed("move_right"):
 		direction.x += 1
@@ -34,3 +34,15 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, NEGATIVE_SPEED)
 		velocity.z = move_toward(velocity.z, 0, NEGATIVE_SPEED)
 	move_and_slide()
+
+#Menu
+	if Input.is_action_pressed("pause"):
+		%PauseMenu.show()
+		get_tree().paused = true
+
+func _on_resume_pressed():
+	get_tree().paused = false
+	%PauseMenu.hide()
+
+func _on_quit_pressed():
+	get_tree().quit()

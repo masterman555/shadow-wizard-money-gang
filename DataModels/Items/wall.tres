@@ -1,10 +1,11 @@
-[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ditmqsvqmlyq7"]
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://ditmqsvqmlyq7"]
 
 [ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_586cb"]
-[ext_resource type="PackedScene" uid="uid://85kcyp4y4pjo" path="res://Assets/BlenderFile/simple_wall.glb" id="1_betf7"]
 
 [resource]
 script = ExtResource("1_586cb")
+item_id = 3
 name = "Wall"
-scene = ExtResource("1_betf7")
+description = "This is wall"
 price = 5
+amount = 1
