@@ -1,0 +1,34 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b25oguit1hc60"
+path="res://.godot/imported/two headed snake.glb-f1a1e2673106d816b4a4f1cf5dffccb7.scn"
+
+[deps]
+
+source_file="res://Assets/assets - glb/creature vendor/two-headed snake/two headed snake.glb"
+dest_files=["res://.godot/imported/two headed snake.glb-f1a1e2673106d816b4a4f1cf5dffccb7.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
