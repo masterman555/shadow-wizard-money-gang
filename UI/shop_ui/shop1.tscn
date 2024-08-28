@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://c625hg53cqhrb"]
+[gd_scene load_steps=9 format=3 uid="uid://c625hg53cqhrb"]
 
 [ext_resource type="Script" path="res://UI/shop_ui/shop1.gd" id="1_nsfuw"]
 [ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="2_ytceb"]
 [ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="3_t0t8b"]
 [ext_resource type="Resource" uid="uid://ditmqsvqmlyq7" path="res://DataModels/Items/wall.tres" id="4_puvm3"]
+[ext_resource type="Texture2D" uid="uid://iiai5dgjn3" path="res://icons/builders shop/brass/brass.png" id="5_wpxnx"]
+[ext_resource type="Texture2D" uid="uid://cm5y03qiueiyl" path="res://icons/builders shop/copper/copper.png" id="6_8rii3"]
+[ext_resource type="Texture2D" uid="uid://cayow0drgheik" path="res://icons/builders shop/iron/iron.png" id="7_4e3ql"]
+[ext_resource type="Texture2D" uid="uid://4c53n74sm6rc" path="res://icons/builders shop/wood/wood.png" id="8_ifvjl"]
 
 [node name="Shop" type="CanvasLayer"]
 offset = Vector2(0, -300)
@@ -33,10 +37,14 @@ offset_right = 429.0
 offset_bottom = 539.0
 select_mode = 1
 item_count = 4
-item_0/text = "asdasdasd"
-item_1/text = "aaaa"
-item_2/text = "aaaasdasdasdad"
-item_3/text = "aadasdasdas"
+item_0/text = "Brass"
+item_0/icon = ExtResource("5_wpxnx")
+item_1/text = "Copper"
+item_1/icon = ExtResource("6_8rii3")
+item_2/text = "Iron"
+item_2/icon = ExtResource("7_4e3ql")
+item_3/text = "Wood"
+item_3/icon = ExtResource("8_ifvjl")
 
 [node name="Close" type="Button" parent="."]
 offset_left = 1015.0
