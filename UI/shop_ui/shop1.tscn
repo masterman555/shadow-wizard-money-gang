@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://c625hg53cqhrb"]
+[gd_scene load_steps=5 format=3 uid="uid://c625hg53cqhrb"]
 
 [ext_resource type="Script" path="res://UI/shop_ui/shop1.gd" id="1_nsfuw"]
-[ext_resource type="Texture2D" uid="uid://ca4b1x6dkj3h4" path="res://Assets/coin.png" id="2_xhxle"]
 [ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="2_ytceb"]
 [ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="3_t0t8b"]
 [ext_resource type="Resource" uid="uid://ditmqsvqmlyq7" path="res://DataModels/Items/wall.tres" id="4_puvm3"]
@@ -27,6 +26,18 @@ offset_bottom = 575.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ItemList" type="ItemList" parent="Panel"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 539.0
+select_mode = 1
+item_count = 4
+item_0/text = "asdasdasd"
+item_1/text = "aaaa"
+item_2/text = "aaaasdasdasdad"
+item_3/text = "aadasdasdas"
+
 [node name="Close" type="Button" parent="."]
 offset_left = 1015.0
 offset_top = 361.0
@@ -41,54 +52,6 @@ offset_top = 302.0
 offset_right = 38.0
 offset_bottom = 342.0
 
-[node name="ItemSprite1" type="Sprite2D" parent="Control"]
-position = Vector2(247, 282)
-scale = Vector2(7.1875, 6.1875)
-texture = ExtResource("2_xhxle")
-
-[node name="ItemSprite2" type="Sprite2D" parent="Control"]
-position = Vector2(560, 284)
-scale = Vector2(7.1875, 6.1875)
-texture = ExtResource("2_xhxle")
-
-[node name="ItemSprite3" type="Sprite2D" parent="Control"]
-position = Vector2(905, 280)
-scale = Vector2(7.1875, 6.1875)
-texture = ExtResource("2_xhxle")
-
-[node name="Name2" type="Label" parent="Control"]
-layout_mode = 0
-offset_left = 467.0
-offset_top = 94.0
-offset_right = 672.0
-offset_bottom = 139.0
-text = "Pepper"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="Name3" type="Label" parent="Control"]
-layout_mode = 0
-offset_left = 813.0
-offset_top = 92.0
-offset_right = 1018.0
-offset_bottom = 137.0
-text = "Wall"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="Name1" type="Label" parent="Control"]
-layout_mode = 0
-offset_left = 156.0
-offset_top = 89.0
-offset_right = 361.0
-offset_bottom = 134.0
-text = "Arch"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
 [node name="Desc" type="Label" parent="Control"]
 visible = false
 layout_mode = 0
@@ -102,12 +65,15 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Buy" type="Button" parent="Control"]
+unique_name_in_owner = true
 layout_mode = 0
-offset_left = 490.0
-offset_top = 459.0
-offset_right = 635.0
-offset_bottom = 580.0
+offset_left = 847.0
+offset_top = 260.0
+offset_right = 992.0
+offset_bottom = 381.0
+disabled = true
 text = "Buy"
 
+[connection signal="item_clicked" from="Panel/ItemList" to="." method="_on_item_list_item_clicked"]
 [connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="Control/Buy" to="." method="_on_buy_pressed"]

@@ -4,6 +4,7 @@ extends CharacterBody3D
 @export var player_speed : float = 15.0
 @export var NEGATIVE_SPEED : float = 8.0
 
+
 var inventory:Inventory = Inventory.new()
 
 func on_item_picked_up(item:Item):
