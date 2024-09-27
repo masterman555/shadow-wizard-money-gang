@@ -1,23 +1,20 @@
-[gd_scene load_steps=9 format=3 uid="uid://c625hg53cqhrb"]
+[gd_scene load_steps=5 format=3 uid="uid://c625hg53cqhrb"]
 
 [ext_resource type="Script" path="res://UI/shop_ui/shop1.gd" id="1_nsfuw"]
-[ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="2_ytceb"]
-[ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="3_t0t8b"]
-[ext_resource type="Resource" uid="uid://ditmqsvqmlyq7" path="res://DataModels/Items/wall.tres" id="4_puvm3"]
-[ext_resource type="Texture2D" uid="uid://iiai5dgjn3" path="res://icons/builders shop/brass/brass.png" id="5_wpxnx"]
-[ext_resource type="Texture2D" uid="uid://cm5y03qiueiyl" path="res://icons/builders shop/copper/copper.png" id="6_8rii3"]
-[ext_resource type="Texture2D" uid="uid://cayow0drgheik" path="res://icons/builders shop/iron/iron.png" id="7_4e3ql"]
-[ext_resource type="Texture2D" uid="uid://4c53n74sm6rc" path="res://icons/builders shop/wood/wood.png" id="8_ifvjl"]
+[ext_resource type="Resource" uid="uid://cjboihm0xn7u5" path="res://DataModels/Items/silver.tres" id="2_gyhb5"]
+[ext_resource type="Resource" uid="uid://joxhn40wfdlw" path="res://DataModels/Items/iron.tres" id="3_nmbx2"]
+[ext_resource type="Resource" uid="uid://cmd6u36hxrx2e" path="res://DataModels/Items/brass.tres" id="4_s5vn1"]
 
 [node name="Shop" type="CanvasLayer"]
 offset = Vector2(0, -300)
 transform = Transform2D(1, 0, 0, 1, 0, -300)
 script = ExtResource("1_nsfuw")
-item_1 = ExtResource("2_ytceb")
-item_2 = ExtResource("3_t0t8b")
-item_3 = ExtResource("4_puvm3")
+item_1 = ExtResource("2_gyhb5")
+item_2 = ExtResource("3_nmbx2")
+item_3 = ExtResource("4_s5vn1")
 
 [node name="Panel" type="Panel" parent="."]
+unique_name_in_owner = true
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -35,32 +32,23 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_right = 429.0
 offset_bottom = 539.0
-select_mode = 1
-item_count = 4
-item_0/text = "Brass"
-item_0/icon = ExtResource("5_wpxnx")
-item_1/text = "Copper"
-item_1/icon = ExtResource("6_8rii3")
-item_2/text = "Iron"
-item_2/icon = ExtResource("7_4e3ql")
-item_3/text = "Wood"
-item_3/icon = ExtResource("8_ifvjl")
 
-[node name="Close" type="Button" parent="."]
-offset_left = 1015.0
-offset_top = 361.0
-offset_right = 1088.0
-offset_bottom = 412.0
+[node name="Close" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 950.0
+offset_top = 1.0
+offset_right = 1023.0
+offset_bottom = 52.0
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="Panel"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -2.0
-offset_top = 302.0
-offset_right = 38.0
-offset_bottom = 342.0
+offset_left = -64.0
+offset_top = -59.0
+offset_right = -24.0
+offset_bottom = -19.0
 
-[node name="Desc" type="Label" parent="Control"]
+[node name="Desc" type="Label" parent="Panel/Control"]
 visible = false
 layout_mode = 0
 offset_left = 442.0
@@ -72,7 +60,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Buy" type="Button" parent="Control"]
+[node name="Buy" type="Button" parent="Panel/Control"]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 847.0
@@ -83,5 +71,5 @@ disabled = true
 text = "Buy"
 
 [connection signal="item_clicked" from="Panel/ItemList" to="." method="_on_item_list_item_clicked"]
-[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
-[connection signal="pressed" from="Control/Buy" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="Panel/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Panel/Control/Buy" to="." method="_on_buy_pressed"]

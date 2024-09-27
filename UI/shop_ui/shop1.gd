@@ -1,29 +1,38 @@
 extends CanvasLayer
 
-
 @export var item_1:Item
 @export var item_2:Item
 @export var item_3:Item
 
 var inventory:Inventory = Inventory.new()
+var enoughGold = false
+var selected_Item : int
+var thisisthecurrentitemthatyouareholding : Item
+var hasItem = false
+
+func _ready():
+	%ItemList.add_item(item_1.name,item_1.icon)
+	%ItemList.add_item(item_2.name,item_2.icon)
+	%ItemList.add_item(item_3.name,item_3.icon)
 
 func _on_close_pressed():
-	%Shop.hide()
+	%Panel.hide()
 	print(GlobalGold.gold)
+
 func _on_buy_pressed():
-	var hasItem = false
 	%ItemList.deselect_all()
-	for i in inventory._content:
-		if inventory._content[i]["Name"] == Item["Name"] and GlobalGold.gold >= Item["Price"]: #this prob works if somehow you can access the actual value of the price
-#			GlobalGold.gold - Item["Price"]
-			Inventory["Count"] += 1
-			hasItem = true
-	if hasItem == false:
-#		if body.has_method("on_item_picked_up"):
-#			body.on_item_picked_up(item_1)
-		pass
+	GlobalGold.purchase(thisisthecurrentitemthatyouareholding.price)
+	inventory.add_item(thisisthecurrentitemthatyouareholding)
 	print(inventory._content)
 
-
-func _on_item_list_item_clicked():
+func _on_item_list_item_clicked(index, at_position, mouse_button_index):
 	%Buy.disabled = false
+	selected_Item = index
+	if %ItemList.get_item_text(selected_Item) == item_1.name:
+		thisisthecurrentitemthatyouareholding = item_1
+	elif %ItemList.get_item_text(selected_Item) == item_2.name:
+		thisisthecurrentitemthatyouareholding = item_2
+	elif %ItemList.get_item_text(selected_Item) == item_3.name:
+		thisisthecurrentitemthatyouareholding = item_3
+	else:
+		print("Get Goofed")

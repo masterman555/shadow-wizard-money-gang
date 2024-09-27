@@ -21,7 +21,6 @@ func _physics_process(_delta):
 		direction.z += 1
 	if Input.is_action_pressed("move_up"):
 		direction.z -= 1
-		
 	
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
@@ -47,3 +46,9 @@ func _on_resume_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
+	
+func update_currency(amount): # currently no work :( - its in ready func for now
+	%Currency.set_text(GlobalGold)
+
+func _ready(): # it doesnt work
+	%Currency.set_text(str(GlobalGold))
