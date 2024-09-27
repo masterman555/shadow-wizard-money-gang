@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cuatxs72j1va7"]
+
+[ext_resource type="Texture2D" uid="uid://4gk7v4c2d6ir" path="res://icons/weaponry/morning star/morning star.png" id="1_7yxpt"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_73abc"]
+
+[resource]
+script = ExtResource("1_73abc")
+name = "Morning star"
+description = ""
+icon = ExtResource("1_7yxpt")
+price = 5

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://5m0vev6g8163"]
+
+[ext_resource type="Texture2D" uid="uid://di5fjqj1b30i6" path="res://icons/jewelry/agate/agate.png" id="1_5smwk"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_gyn04"]
+
+[resource]
+script = ExtResource("1_gyn04")
+name = "Agate"
+description = ""
+icon = ExtResource("1_5smwk")
+price = 5

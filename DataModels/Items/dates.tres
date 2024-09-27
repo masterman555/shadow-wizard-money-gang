@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bsasidujewefe"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_21dye"]
+[ext_resource type="Texture2D" uid="uid://b0ccs5pydcab2" path="res://icons/groceries/dates/dates.png" id="1_rbut5"]
+
+[resource]
+script = ExtResource("1_21dye")
+name = "Dates"
+description = ""
+icon = ExtResource("1_rbut5")
+price = 5

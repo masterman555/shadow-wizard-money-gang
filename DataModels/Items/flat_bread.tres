@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dyeimklbpncmg"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_er8xe"]
+[ext_resource type="Texture2D" uid="uid://bdrqbyf5pw3p4" path="res://icons/groceries/bread/bread.png" id="1_mbb1g"]
+
+[resource]
+script = ExtResource("1_er8xe")
+name = "Flat Bread"
+description = ""
+icon = ExtResource("1_mbb1g")
+price = 5

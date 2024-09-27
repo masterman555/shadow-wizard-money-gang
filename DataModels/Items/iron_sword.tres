@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://rm2kj4dyw130"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_7u5yh"]
+[ext_resource type="Texture2D" uid="uid://dy2jy6f4bx3r8" path="res://icons/weaponry/sword/sword.png" id="1_uvnsd"]
+
+[resource]
+script = ExtResource("1_7u5yh")
+name = "Iron sword"
+description = ""
+icon = ExtResource("1_uvnsd")
+price = 5

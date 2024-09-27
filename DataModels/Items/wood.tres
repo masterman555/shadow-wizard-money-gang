@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://r3dk1mfh8l0v"]
+
+[ext_resource type="Texture2D" uid="uid://4c53n74sm6rc" path="res://icons/builders shop/wood/wood.png" id="1_tauuc"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_ysucx"]
+
+[resource]
+script = ExtResource("1_ysucx")
+name = "Wood"
+description = ""
+icon = ExtResource("1_tauuc")
+price = 5

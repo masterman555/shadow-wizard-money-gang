@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=12 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://bsbuw0lt7ov81" path="res://Assets/BlenderFile/planefloor.glb" id="3_67xff"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="4_uiwmf"]
 [ext_resource type="PackedScene" uid="uid://bndqy85t1acsb" path="res://pickup.tscn" id="5_23nte"]
 [ext_resource type="Resource" uid="uid://ca317ddclls6d" path="res://DataModels/Items/arch.tres" id="6_fh21u"]
 [ext_resource type="Script" path="res://UI/UIRoot.gd" id="7_8gart"]
@@ -9,6 +10,13 @@
 [ext_resource type="Resource" uid="uid://be05vlseodjyd" path="res://DataModels/all_recipes.tres" id="8_w0c0s"]
 [ext_resource type="PackedScene" uid="uid://dj4ifociina5c" path="res://UI/crafting_dialogue/crafting_dialogue.tscn" id="9_qo13o"]
 [ext_resource type="PackedScene" uid="uid://d143f266q7ptu" path="res://Maps/Shops/shopmodel1.tscn" id="11_mjnue"]
+
+[sub_resource type="Resource" id="Resource_wrwbk"]
+resource_local_to_scene = true
+script = ExtResource("4_uiwmf")
+name = "Wall"
+description = "This is wall"
+price = 5
 
 [node name="Node3D" type="Node3D"]
 
@@ -27,6 +35,7 @@ transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.231299, 43.5097,
 
 [node name="Node3D" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
+item = SubResource("Resource_wrwbk")
 
 [node name="Node3D2" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)

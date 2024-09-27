@@ -14,4 +14,6 @@ func _on_area_3d_body_exited(_body):
 
 func _process(_delta):
 	if InRange == true and Input.is_action_just_pressed("shop"):  
-			%Shop.show()
+		%Shop.show()
+	else: 
+		%Shop.hide()

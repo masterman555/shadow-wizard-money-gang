@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cx4erk105yxql"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_g35ht"]
+[ext_resource type="Texture2D" uid="uid://qi1edkdaimeu" path="res://icons/jewelry/gold/gold.png" id="1_ufrun"]
+
+[resource]
+script = ExtResource("1_g35ht")
+name = "Gold"
+description = ""
+icon = ExtResource("1_ufrun")
+price = 5

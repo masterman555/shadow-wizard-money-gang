@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://joxhn40wfdlw"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_qy267"]
+[ext_resource type="Texture2D" uid="uid://cayow0drgheik" path="res://icons/builders shop/iron/iron.png" id="1_sqh5d"]
+
+[resource]
+script = ExtResource("1_qy267")
+name = "Iron"
+description = ""
+icon = ExtResource("1_sqh5d")
+price = 10

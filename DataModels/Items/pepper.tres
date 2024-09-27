@@ -1,13 +1,11 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dc38q6i5ccf0c"]
 
+[ext_resource type="Texture2D" uid="uid://clmqyk2l6iur1" path="res://icons/spice shop/pepper/pepper.png" id="1_4ekg4"]
 [ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_cuye8"]
-[ext_resource type="Texture2D" uid="uid://qi68t8qaijk1" path="res://icon.svg" id="1_n4iil"]
 
 [resource]
 script = ExtResource("1_cuye8")
-item_id = 2
 name = "Pepper"
 description = "This is pepper"
-icon = ExtResource("1_n4iil")
+icon = ExtResource("1_4ekg4")
 price = 5
-amount = 1

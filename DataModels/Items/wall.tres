@@ -4,8 +4,6 @@
 
 [resource]
 script = ExtResource("1_586cb")
-item_id = 3
 name = "Wall"
 description = "This is wall"
 price = 5
-amount = 1

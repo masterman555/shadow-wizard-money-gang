@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bxlib7keq81px"]
+
+[ext_resource type="Texture2D" uid="uid://bmvi0jcnb1r1d" path="res://icons/groceries/lamb meat/lamb meat.png" id="1_u5eb6"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_w3om1"]
+
+[resource]
+script = ExtResource("1_w3om1")
+name = "Lamb meat"
+description = ""
+icon = ExtResource("1_u5eb6")
+price = 5

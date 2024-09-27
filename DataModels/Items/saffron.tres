@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://lh0q3mg84ed8"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_0k2ad"]
+[ext_resource type="Texture2D" uid="uid://3hkwdkesoqrq" path="res://icons/spice shop/saffron/saffron.png" id="1_pcnrw"]
+
+[resource]
+script = ExtResource("1_0k2ad")
+name = "Saffron"
+description = ""
+icon = ExtResource("1_pcnrw")
+price = 5

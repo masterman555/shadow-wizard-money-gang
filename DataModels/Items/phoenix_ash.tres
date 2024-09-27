@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cyghgw6sfwn8m"]
+
+[ext_resource type="Texture2D" uid="uid://c6fyp1gowfoxn" path="res://icons/spice shop/pheonix ash/pheonix ash.png" id="1_4blmo"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_hongn"]
+
+[resource]
+script = ExtResource("1_hongn")
+name = "Phoenix ash
+"
+description = ""
+icon = ExtResource("1_4blmo")
+price = 5

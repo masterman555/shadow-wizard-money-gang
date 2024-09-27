@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://ca317ddclls6d"]
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ca317ddclls6d"]
 
+[ext_resource type="Texture2D" uid="uid://ca4b1x6dkj3h4" path="res://Assets/coin.png" id="1_6nt0g"]
 [ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_aji5c"]
 
 [resource]
 script = ExtResource("1_aji5c")
-item_id = 1
 name = "Arch"
 description = "This is arch"
+icon = ExtResource("1_6nt0g")
 price = 5
-amount = 1

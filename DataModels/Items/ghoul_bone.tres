@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cdm182m4f8dal"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_hhidc"]
+[ext_resource type="Texture2D" uid="uid://dv2romr2a2hnv" path="res://icons/builders shop/ghoul bone/ghoul bone.png" id="1_jiqnv"]
+
+[resource]
+script = ExtResource("1_hhidc")
+name = "Ghoul bone"
+description = ""
+icon = ExtResource("1_jiqnv")
+price = 5

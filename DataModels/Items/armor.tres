@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ceow1icm3bq8c"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_fvdvl"]
+[ext_resource type="Texture2D" uid="uid://cvn15mveo84e2" path="res://icons/weaponry/armor/armor.png" id="1_o160q"]
+
+[resource]
+script = ExtResource("1_fvdvl")
+name = "Armor"
+description = ""
+icon = ExtResource("1_o160q")
+price = 5

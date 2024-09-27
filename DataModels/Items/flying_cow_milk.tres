@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://6lxy814h82ov"]
+
+[ext_resource type="Texture2D" uid="uid://sskk2gfkhmpd" path="res://icons/groceries/flying cow milk/flying cow milk.png" id="1_4gnrc"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_6m1jt"]
+
+[resource]
+script = ExtResource("1_6m1jt")
+name = "Flying cow milk"
+description = ""
+icon = ExtResource("1_4gnrc")
+price = 5

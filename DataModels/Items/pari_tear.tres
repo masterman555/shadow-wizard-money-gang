@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://chhdr4pkcujt4"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_5o3gt"]
+[ext_resource type="Texture2D" uid="uid://cvgna3oeb2rmr" path="res://icons/spice shop/pari tear/pari tear.png" id="1_y8oss"]
+
+[resource]
+script = ExtResource("1_5o3gt")
+name = "Pari tear"
+description = ""
+icon = ExtResource("1_y8oss")
+price = 5

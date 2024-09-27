@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://ufprli21dy4q"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_op5hp"]
+
+[resource]
+script = ExtResource("1_op5hp")
+name = "Bronze"
+description = ""
+price = 5

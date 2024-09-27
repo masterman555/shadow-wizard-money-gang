@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://btrnf0ufvgy6n"]
+
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_q6w6r"]
+[ext_resource type="Texture2D" uid="uid://cm5y03qiueiyl" path="res://icons/builders shop/copper/copper.png" id="1_wh6sc"]
+
+[resource]
+script = ExtResource("1_q6w6r")
+name = "Copper"
+description = ""
+icon = ExtResource("1_wh6sc")
+price = 5

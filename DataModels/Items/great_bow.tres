@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://drrghvtw4brdc"]
+
+[ext_resource type="Texture2D" uid="uid://dwr12xu7k6gve" path="res://icons/weaponry/bow/bow.png" id="1_hkd6x"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_xabop"]
+
+[resource]
+script = ExtResource("1_xabop")
+name = "Great bow"
+description = ""
+icon = ExtResource("1_hkd6x")
+price = 5

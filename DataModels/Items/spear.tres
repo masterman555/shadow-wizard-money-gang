@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bv1dramt6e288"]
+
+[ext_resource type="Texture2D" uid="uid://c8eunwuea3vev" path="res://icons/weaponry/spear/spear.png" id="1_4emo5"]
+[ext_resource type="Script" path="res://DataModels/Resources/item.gd" id="1_76osi"]
+
+[resource]
+script = ExtResource("1_76osi")
+name = "Spear"
+description = ""
+icon = ExtResource("1_4emo5")
+price = 5
