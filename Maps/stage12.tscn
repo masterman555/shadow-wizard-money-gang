@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=14 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://bsbuw0lt7ov81" path="res://Assets/BlenderFile/planefloor.glb" id="3_67xff"]
@@ -9,9 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://dee6nu6d7rwpx" path="res://UI/inventory_dialogue.tscn" id="8_uahfx"]
 [ext_resource type="Resource" uid="uid://be05vlseodjyd" path="res://DataModels/all_recipes.tres" id="8_w0c0s"]
 [ext_resource type="PackedScene" uid="uid://dj4ifociina5c" path="res://UI/crafting_dialogue/crafting_dialogue.tscn" id="9_qo13o"]
+[ext_resource type="PackedScene" uid="uid://yntfi7ae0vbp" path="res://Assets/assets - glb/background.glb" id="11_gqhaa"]
 [ext_resource type="PackedScene" uid="uid://d143f266q7ptu" path="res://Maps/Shops/shopmodel1.tscn" id="11_mjnue"]
+[ext_resource type="PackedScene" uid="uid://c1ah1wa4abltd" path="res://Assets/assets - glb/large_background.glb" id="12_37oh1"]
 
-[sub_resource type="Resource" id="Resource_wrwbk"]
+[sub_resource type="Resource" id="Resource_yj341"]
 resource_local_to_scene = true
 script = ExtResource("4_uiwmf")
 name = "Wall"
@@ -35,7 +37,7 @@ transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.231299, 43.5097,
 
 [node name="Node3D" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
-item = SubResource("Resource_wrwbk")
+item = SubResource("Resource_yj341")
 
 [node name="Node3D2" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)
@@ -73,3 +75,21 @@ offset_left = -578.0
 offset_top = -325.0
 offset_right = 576.0
 offset_bottom = 325.0
+
+[node name="background" parent="." instance=ExtResource("11_gqhaa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4964, 6.69169, 13.3754)
+
+[node name="background2" parent="." instance=ExtResource("11_gqhaa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.4964, 6.69169, 13.3754)
+
+[node name="large_background" parent="." instance=ExtResource("12_37oh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.647, 7.5509, 84.652)
+
+[node name="large_background4" parent="." instance=ExtResource("12_37oh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.647, 7.5509, -85.3041)
+
+[node name="large_background2" parent="." instance=ExtResource("12_37oh1")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 129.885, 7.26251, 58.7578)
+
+[node name="large_background3" parent="." instance=ExtResource("12_37oh1")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -74.6279, 7.26251, 58.7578)

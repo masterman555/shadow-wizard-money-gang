@@ -50,5 +50,5 @@ func _on_quit_pressed():
 func update_currency(amount): # currently no work :( - its in ready func for now
 	%Currency.set_text(GlobalGold)
 
-func _ready(): # it doesnt work
-	%Currency.set_text(str(GlobalGold))
+func _ready():
+	%Currency.set_text(str(GlobalGold.gold))
