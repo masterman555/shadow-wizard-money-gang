@@ -8,4 +8,4 @@ script = ExtResource("1_iavam")
 name = "Cheese"
 description = ""
 icon = ExtResource("1_nvlwg")
-price = 5
+price = 4

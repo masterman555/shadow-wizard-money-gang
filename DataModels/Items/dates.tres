@@ -8,4 +8,4 @@ script = ExtResource("1_21dye")
 name = "Dates"
 description = ""
 icon = ExtResource("1_rbut5")
-price = 5
+price = 3

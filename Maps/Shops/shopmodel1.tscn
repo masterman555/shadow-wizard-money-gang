@@ -1,9 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://d143f266q7ptu"]
+[gd_scene load_steps=20 format=3 uid="uid://d143f266q7ptu"]
 
 [ext_resource type="Script" path="res://Maps/Shops/shopmodel1.gd" id="1_xqylg"]
 [ext_resource type="PackedScene" uid="uid://214fy7krqh65" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/big pepper plate.blend" id="2_1dg20"]
 [ext_resource type="PackedScene" uid="uid://c625hg53cqhrb" path="res://UI/shop_ui/shop1.tscn" id="2_fcwet"]
+[ext_resource type="Resource" uid="uid://lh0q3mg84ed8" path="res://DataModels/Items/saffron.tres" id="3_o3a42"]
+[ext_resource type="Resource" uid="uid://dhrwho80lbq1l" path="res://DataModels/Items/sumac.tres" id="4_1ioci"]
 [ext_resource type="PackedScene" uid="uid://brg211fsp121a" path="res://Assets/BlenderFile/shop assets/spice shop/pheonix ash/pheonix ash puch.blend" id="5_afxqn"]
+[ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="5_tq0va"]
 [ext_resource type="PackedScene" uid="uid://cgly33kbaxh7l" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/slim pepper pot.blend" id="6_o6nqw"]
 [ext_resource type="PackedScene" uid="uid://qqvljtb8s6mo" path="res://Assets/BlenderFile/shop assets/spice shop/pepper/fat pepper pot.blend" id="7_tqt5r"]
 [ext_resource type="PackedScene" uid="uid://bjqtkpoxj40gf" path="res://Assets/BlenderFile/shop assets/characters/npc/npc.blend" id="9_txos7"]
@@ -42,6 +45,9 @@ font_size = 128
 [node name="Shop" parent="Area3D" instance=ExtResource("2_fcwet")]
 unique_name_in_owner = true
 visible = false
+item_1 = ExtResource("3_o3a42")
+item_2 = ExtResource("4_1ioci")
+item_3 = ExtResource("5_tq0va")
 
 [node name="big pepper plate" parent="." instance=ExtResource("2_1dg20")]
 transform = Transform3D(0.948848, 0.295824, 0.110339, 1.38011e-08, -0.349472, 0.936947, 0.315732, -0.889021, -0.331596, -2.54774, 1.03241, -1.84072)

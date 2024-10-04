@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dx1l6w8gjlro5"]
+[gd_scene load_steps=16 format=3 uid="uid://dx1l6w8gjlro5"]
 
 [ext_resource type="PackedScene" uid="uid://bt8ctp221vro8" path="res://Player/player.tscn" id="2_jk5pp"]
 [ext_resource type="PackedScene" uid="uid://bsbuw0lt7ov81" path="res://Assets/BlenderFile/planefloor.glb" id="3_67xff"]
@@ -12,8 +12,10 @@
 [ext_resource type="PackedScene" uid="uid://yntfi7ae0vbp" path="res://Assets/assets - glb/background.glb" id="11_gqhaa"]
 [ext_resource type="PackedScene" uid="uid://d143f266q7ptu" path="res://Maps/Shops/shopmodel1.tscn" id="11_mjnue"]
 [ext_resource type="PackedScene" uid="uid://c1ah1wa4abltd" path="res://Assets/assets - glb/large_background.glb" id="12_37oh1"]
+[ext_resource type="PackedScene" uid="uid://crpiu1b01pcfv" path="res://Maps/Shops/shopmodel2.tscn" id="13_1w5a4"]
+[ext_resource type="PackedScene" uid="uid://be4xn68m715j7" path="res://Maps/End_Point/theend.tscn" id="14_00hjp"]
 
-[sub_resource type="Resource" id="Resource_yj341"]
+[sub_resource type="Resource" id="Resource_er8as"]
 resource_local_to_scene = true
 script = ExtResource("4_uiwmf")
 name = "Wall"
@@ -30,14 +32,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94976, 0.710248, 2.49822)
 transform = Transform3D(1, 0, 0, 0, 0.805835, 0.59214, 0, -0.59214, 0.805835, 0, 1.9389, 6.95092)
 
 [node name="planefloor" parent="." instance=ExtResource("3_67xff")]
-transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.231299, 17.7183, 0.430829, 2.95607)
+transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.533611, 17.8196, 0.430833, 2.9543)
 
 [node name="planefloor2" parent="." instance=ExtResource("3_67xff")]
-transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.231299, 43.5097, 0.430829, 2.95607)
+transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.535032, 43.5097, 0.430829, 2.95607)
 
 [node name="Node3D" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
-item = SubResource("Resource_yj341")
+item = SubResource("Resource_er8as")
 
 [node name="Node3D2" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)
@@ -83,7 +85,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4964, 6.69169, 13.3754)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.4964, 6.69169, 13.3754)
 
 [node name="large_background" parent="." instance=ExtResource("12_37oh1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.647, 7.5509, 84.652)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.647, 7.5509, 89.2739)
 
 [node name="large_background4" parent="." instance=ExtResource("12_37oh1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.647, 7.5509, -85.3041)
@@ -93,3 +95,9 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 129.88
 
 [node name="large_background3" parent="." instance=ExtResource("12_37oh1")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -74.6279, 7.26251, 58.7578)
+
+[node name="Node3D3" parent="." instance=ExtResource("13_1w5a4")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 18.376, -0.0195296, -2.30704)
+
+[node name="Endpoint" parent="." instance=ExtResource("14_00hjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.1296, 1.05496, 4.0187)
