@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://crpiu1b01pcfv" path="res://Maps/Shops/shopmodel2.tscn" id="13_1w5a4"]
 [ext_resource type="PackedScene" uid="uid://be4xn68m715j7" path="res://Maps/End_Point/theend.tscn" id="14_00hjp"]
 
-[sub_resource type="Resource" id="Resource_er8as"]
+[sub_resource type="Resource" id="Resource_7wt30"]
 resource_local_to_scene = true
 script = ExtResource("4_uiwmf")
 name = "Wall"
@@ -39,7 +39,7 @@ transform = Transform3D(0.231299, 0, 0, 0, 0.231299, 0, 0, 0, 0.535032, 43.5097,
 
 [node name="Node3D" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.531, 4.57655, 0.105232)
-item = SubResource("Resource_er8as")
+item = SubResource("Resource_7wt30")
 
 [node name="Node3D2" parent="." instance=ExtResource("5_23nte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.531, 4.57655, 0.105232)

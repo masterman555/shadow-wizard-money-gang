@@ -6,10 +6,11 @@ extends CanvasLayer
 @export var item_4:Item
 @export var item_5:Item
 
+@onready var player = get_node("/root/Node3D/Player")
 
-var inventory:Inventory = Inventory.new()
+var inventory:Inventory
 var enoughGold = false
-var selected_Item : int
+var selected_item : int
 var thisisthecurrentitemthatyouareholding : Item
 var hasItem = false
 
@@ -26,21 +27,18 @@ func _on_close_pressed():
 func _on_buy_pressed():
 	%ItemList.deselect_all()
 	GlobalGold.purchase(thisisthecurrentitemthatyouareholding.price)
-	inventory.add_item(thisisthecurrentitemthatyouareholding)
-	print(inventory._content)
+	var player_inventory = player.get_inventory()
+	player_inventory.add_item(thisisthecurrentitemthatyouareholding)
+	print("Item added to inventory: ", thisisthecurrentitemthatyouareholding)
+	print(player_inventory._content)
 
 func _on_item_list_item_clicked(index, _at_position, _mouse_button_index):
 	%Buy.disabled = false
-	selected_Item = index
-	if %ItemList.get_item_text(selected_Item) == item_1.name:
-		thisisthecurrentitemthatyouareholding = item_1
-	elif %ItemList.get_item_text(selected_Item) == item_2.name:
-		thisisthecurrentitemthatyouareholding = item_2
-	elif %ItemList.get_item_text(selected_Item) == item_3.name:
-		thisisthecurrentitemthatyouareholding = item_3
-	elif %ItemList.get_item_text(selected_Item) == item_4.name:
-		thisisthecurrentitemthatyouareholding = item_4
-	elif %ItemList.get_item_text(selected_Item) == item_5.name:
-		thisisthecurrentitemthatyouareholding = item_5
-	else:
-		print("Get Goofed")
+	selected_item = index
+	match %ItemList.get_item_text(selected_item):
+		item_1.name:
+			thisisthecurrentitemthatyouareholding = item_1
+		item_2.name:
+			thisisthecurrentitemthatyouareholding = item_2
+		item_3.name:
+			thisisthecurrentitemthatyouareholding = item_3

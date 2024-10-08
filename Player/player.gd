@@ -11,6 +11,9 @@ func on_item_picked_up(item:Item):
 	inventory.add_item(item)
 	print("I got a ", item.name)
 
+func get_inventory() -> Inventory:
+	return inventory
+
 func _physics_process(_delta):
 	var direction = Vector3() # The player's movement vector.
 	if Input.is_action_pressed("move_right"):
