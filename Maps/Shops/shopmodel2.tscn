@@ -6,9 +6,9 @@
 [ext_resource type="Resource" uid="uid://bf4fj3r52wshc" path="res://DataModels/Items/cheese.tres" id="4_e3jrm"]
 [ext_resource type="Resource" uid="uid://dyeimklbpncmg" path="res://DataModels/Items/flat_bread.tres" id="5_sl5px"]
 [ext_resource type="Resource" uid="uid://6lxy814h82ov" path="res://DataModels/Items/flying_cow_milk.tres" id="6_k7seo"]
+[ext_resource type="Resource" uid="uid://dc38q6i5ccf0c" path="res://DataModels/Items/pepper.tres" id="7_5uhk8"]
 [ext_resource type="PackedScene" uid="uid://bjqtkpoxj40gf" path="res://Assets/BlenderFile/shop assets/characters/npc/npc.blend" id="7_36fpc"]
-[ext_resource type="Resource" uid="uid://bxlib7keq81px" path="res://DataModels/Items/lamb_meat.tres" id="7_fcm40"]
-[ext_resource type="Resource" uid="uid://5m0vev6g8163" path="res://DataModels/Items/agate.tres" id="8_lmus2"]
+[ext_resource type="Resource" uid="uid://r3dk1mfh8l0v" path="res://DataModels/Items/wood.tres" id="8_eb038"]
 [ext_resource type="PackedScene" uid="uid://hbf7rr5syghu" path="res://Assets/assets - glb/groceries/flying cow milk/fat milk jar.glb" id="12_jam2l"]
 [ext_resource type="PackedScene" uid="uid://b5ofk4s1p1df4" path="res://Assets/assets - glb/groceries/flying cow milk/slim milk jar.glb" id="13_olvie"]
 [ext_resource type="PackedScene" uid="uid://85kcyp4y4pjo" path="res://Assets/BlenderFile/simple_wall.glb" id="13_wrqkl"]
@@ -52,8 +52,8 @@ script = ExtResource("3_7q8x1")
 item_1 = ExtResource("4_e3jrm")
 item_2 = ExtResource("5_sl5px")
 item_3 = ExtResource("6_k7seo")
-item_4 = ExtResource("7_fcm40")
-item_5 = ExtResource("8_lmus2")
+item_4 = ExtResource("7_5uhk8")
+item_5 = ExtResource("8_eb038")
 
 [node name="npc" parent="." instance=ExtResource("7_36fpc")]
 transform = Transform3D(0.0915705, 7.33207e-08, -2.00649, 2.00649, -7.67432e-08, 0.0915705, -8.37952e-08, -1.75751, -8.77065e-08, 1.89885, -2.10674, -0.459141)

@@ -18,8 +18,9 @@ func _ready():
 	%ItemList.add_item(item_3.name,item_3.icon)
 
 func _on_close_pressed():
-	%Panel.hide()
+	$".".hide()
 	print(GlobalGold.gold)
+	player.update_currency()
 
 func _on_buy_pressed():
 	if GlobalGold.gold >= thisisthecurrentitemthatyouareholding.price:

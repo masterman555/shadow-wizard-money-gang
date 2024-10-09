@@ -21,16 +21,20 @@ func _ready():
 	%ItemList.add_item(item_4.name,item_4.icon)
 	%ItemList.add_item(item_5.name,item_5.icon)
 func _on_close_pressed():
-	%Panel.hide()
+	$".".hide()
 	print(GlobalGold.gold)
+	player.update_currency()
 
 func _on_buy_pressed():
-	%ItemList.deselect_all()
-	GlobalGold.purchase(thisisthecurrentitemthatyouareholding.price)
-	var player_inventory = player.get_inventory()
-	player_inventory.add_item(thisisthecurrentitemthatyouareholding)
-	print("Item added to inventory: ", thisisthecurrentitemthatyouareholding)
-	print(player_inventory._content)
+	if GlobalGold.gold >= thisisthecurrentitemthatyouareholding.price:
+		%ItemList.deselect_all()
+		GlobalGold.purchase(thisisthecurrentitemthatyouareholding.price)
+		var player_inventory = player.get_inventory()
+		player_inventory.add_item(thisisthecurrentitemthatyouareholding)
+		print("Item added to inventory: ", thisisthecurrentitemthatyouareholding)
+		print(player_inventory._content)
+	else:
+		print("Not enough Gold")
 
 func _on_item_list_item_clicked(index, _at_position, _mouse_button_index):
 	%Buy.disabled = false

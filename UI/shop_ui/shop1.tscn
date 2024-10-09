@@ -1,17 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c625hg53cqhrb"]
+[gd_scene load_steps=2 format=3 uid="uid://c625hg53cqhrb"]
 
 [ext_resource type="Script" path="res://UI/shop_ui/shop1.gd" id="1_nsfuw"]
-[ext_resource type="Resource" uid="uid://cjboihm0xn7u5" path="res://DataModels/Items/silver.tres" id="2_gyhb5"]
-[ext_resource type="Resource" uid="uid://joxhn40wfdlw" path="res://DataModels/Items/iron.tres" id="3_nmbx2"]
-[ext_resource type="Resource" uid="uid://cmd6u36hxrx2e" path="res://DataModels/Items/brass.tres" id="4_s5vn1"]
 
 [node name="Shop" type="CanvasLayer"]
 offset = Vector2(0, -300)
 transform = Transform2D(1, 0, 0, 1, 0, -300)
 script = ExtResource("1_nsfuw")
-item_1 = ExtResource("2_gyhb5")
-item_2 = ExtResource("3_nmbx2")
-item_3 = ExtResource("4_s5vn1")
 
 [node name="Panel" type="Panel" parent="."]
 unique_name_in_owner = true

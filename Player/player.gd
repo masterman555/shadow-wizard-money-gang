@@ -50,8 +50,5 @@ func _on_resume_pressed():
 func _on_quit_pressed():
 	get_tree().quit()
 	
-#func update_currency(amount): # currently no work :( - its in ready func for now
-#	%Currency.set_text(GlobalGold)
-
-func _ready():
+func update_currency():
 	%Currency.set_text(str(GlobalGold.gold))
